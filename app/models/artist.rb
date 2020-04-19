@@ -1,4 +1,4 @@
 class Artist < ActiveRecord::Base
   has_many :songs
-  permits_nested_attributes :songs
+  accepts_nested_attributes_for :songs
 end
