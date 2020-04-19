@@ -4,7 +4,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = Artist.find_by(:id)
+    @artist = Artist.find_by(params[:id])
   end
 
   def new
@@ -23,6 +23,7 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
+    raise params.inspect
   end
 
   def update
