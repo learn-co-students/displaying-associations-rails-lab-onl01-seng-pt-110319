@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20200419060152) do
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "artist_id"
   end
 
 end
